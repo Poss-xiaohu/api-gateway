@@ -10,6 +10,11 @@
     </parent>
 
     <artifactId>gateway-register-center</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>gateway-register-center-api</module>
+        <module>gateway-register-center-nacos-impl</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -17,4 +22,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.poss</groupId>
+            <artifactId>gateway-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    
 </project>
